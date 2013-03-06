@@ -1,0 +1,95 @@
+/*
+ PerseusDict.strings
+ Perseus Word Search
+ 
+ Created by Claudio Capobianco on 26/02/13.
+ Copyright (c) 2013 Librum. All rights reserved.
+ */
+
+/* titles */
+"Form" = "Forma";
+"Lemma" = "Lemma";
+"Pos" = "Tipo";
+"Person" = "Persona";
+"Number" = "Numero";
+"Tense" = "Tempo";
+"Mood" = "Modo";
+"Case" = "Caso";
+"Gender" = "Genere";
+"Voice" = "Voce";
+"Definition" = "Definizione";
+
+/**/
+"form" = "forma";
+"lemma" = "lemma";
+"pos" = "pos";
+"pers" = "Persona";
+"number" = "Numero";
+"tense" = "Tempo";
+"mood" = "Modo";
+"case" = "Caso";
+"gender" = "Genere";
+"voice" = "Voce";
+"definition" = "Definizione";
+
+"noun" = "nome";
+"verb" = "verbo";
+"adj" = "aggettivo";
+"part" = "participio";
+
+"1st" = "I";
+"2nd" = "II";
+"3rd" = "III";
+
+"sg" = "singolare";
+"pl" = "plurale";
+"dual" = "duale";
+
+"perf" = "perfetto";
+"plup" = "piuccheperfetto";
+"imperf" = "imperfetto";
+"pres" = "presente";
+"futperf" = "futuro perfetto";
+"fut" = "futuro";
+"aor" = "aoristo";
+"pastabs" = "passato assoluto";
+
+"ind" = "indicativo";
+"imperat" = "imperativo";
+"inf" = "infinito";
+"subj" = "congiuntivo"; // SUBJUNCTIVE
+"opt" = "ottativo";
+"gerundive" = "gerundivo";
+"supine" = "supino";
+"gerund" = "gerundio";
+
+"masc" = "maschile";
+"neut" = "neutro";
+"fem" = "femminile";
+
+"nom" = "nominativo";
+"gen" = "genitivo";
+"dat" = "dativo";
+"acc" = "accusativo";
+"voc" = "vocativo";
+"abl" = "ablativo";
+"loc" = "locativo";
+"ins" = "strumentale";
+
+"act" = "attivo";
+"pass" = "passivo";
+"mp" = "medio passivo";
+"mid" = "medio";
+"dep" = "deponente";
+
+"aeolic" = "eolico";
+"attic" = "attico";
+"doric" = "dorico";
+"epic" = "epico";
+"homeric" = "omerico";
+"ionic" = "ionico";
+"parad_form" = "forma paradigmatica";
+"prose" = "prosa";
+"poetic" = "poetico";
+
+/* Degree missing ... */

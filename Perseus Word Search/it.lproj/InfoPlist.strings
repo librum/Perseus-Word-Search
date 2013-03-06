@@ -1,0 +1,20 @@
+/* Localized versions of Info.plist keys */
+"Find placeholder" = "Trova forma";
+"from" = "da";
+
+/*** Report ***/
+/* label */
+"Report an error" = "Segnala un errore";
+/* subject */
+"Error report for application" = "Segnalazione errore per l'applicazione";
+/* body */
+"Application info"             = "Informazioni applicazione";
+"Executable file"              = "File eseguibile";
+"Version"                      = "Versione";
+"Lemma"                        = "Lemma";
+"Please provide more details"  = "Perfavore inserisca maggiori informazioni sull'errore";
+
+/*** Table ***/
+"Form" = "Forma";
+"Lemma" = "Lemma";
+"Mood" = "Modo";
