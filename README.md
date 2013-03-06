@@ -14,7 +14,7 @@ When you start the application, you'll have an empty word list. To populate the 
 You can find the file containing all greek verbs in this repository; it takes some times to parse the xml file.
 **Note:** you can find the whole file with all greek forms in Perseus Hopper:
 download the source [[1]] and navigate to sgml/xml/data, the file is greek.morph.xml;
-but actually to big to be parsed from the application. Maybe future version will resolve this limitation.
+but actually is too big to be parsed from the application. Maybe future version will resolve this limitation.
 
 * open an archive file that you've previously saved.
  Archive file contains the same information of xml file but it's much more fast to load.
