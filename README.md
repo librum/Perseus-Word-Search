@@ -46,6 +46,16 @@ x:CHI
 y:PSI
 w:OMEGA
 
+
+Screenshots
+===========
+
+<a href="https://docs.google.com/file/d/0BzCckIssc0EfT01qNVBXMmhTVGM/edit?usp=sharing"/>
+
+https://docs.google.com/file/d/0BzCckIssc0EfT01qNVBXMmhTVGM/edit?usp=sharing
+https://docs.google.com/file/d/0BzCckIssc0EfcDRiUXVsclJyT3c/edit?usp=sharing
+https://docs.google.com/file/d/0BzCckIssc0EfelpsZUlzNHFoQzA/edit?usp=sharing
+
 Copyright
 =========
 **Perseus database copyrights**
