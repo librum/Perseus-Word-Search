@@ -14,7 +14,7 @@ When you start the application, you'll have an empty word list. To populate the 
 You can find the file containing all greek verbs in this repository; it takes some times to parse the xml file.
 **Note:** you can find the whole file with all greek forms in Perseus Hopper:
 download the source [[1]] and navigate to sgml/xml/data, the file is greek.morph.xml;
-but actually to big to be parsed from the application. Maybe future version will resolve this limitation.
+but actually it's too big to be parsed from the application. Maybe future version will resolve this limitation.
 
 * open an archive file that you've previously saved.
  Archive file contains the same information of xml file but it's much more fast to load.
@@ -47,10 +47,6 @@ y:PSI
 w:OMEGA
 
 
-Screenshots
-===========
-See the root folder images.
-
 Copyright
 =========
 **Perseus database copyrights**
@@ -58,7 +54,7 @@ Copyright
 Tufts University holds the overall copyright to the Perseus Digital Library; the materials therein are provided for the personal use of students, scholars, and the public. Any commercial use or publication without authorization is strictly prohibited. Copyright is protected by the copyright laws of the United States and the Universal Copyright Convention.
 For more information: www.perseus.tufts.edu
 
-**Source coide - Librum library**
+**Source code - Librum library**
 
 All the source code in this repository is developed by Librum.
 For more information: www.librum.it
