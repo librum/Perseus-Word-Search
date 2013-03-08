@@ -49,6 +49,28 @@ x:CHI
 y:PSI
 w:OMEGA
 
+Snapshots
+=========
+File menu
+---------
+<a><img src="http://www.librum.it/librum/perseus/Perseus-Word-Search-file.png" alt="Word Search"
+width="640"/></a>
+
+---
+
+Just opened a file
+------------------
+<a><img src="http://www.librum.it/librum/perseus/Perseus-Word-Search-open.png" alt="Word Search"
+width="640"/></a>
+
+---
+
+Search for a word
+-----------------
+<a><img src="http://www.librum.it/librum/perseus/Perseus-Word-Search-search.png" alt="Word Search"
+width="640"/></a>
+
+
 
 Copyright
 =========
