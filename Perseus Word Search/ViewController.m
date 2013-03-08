@@ -108,8 +108,10 @@ ViewController* mySelf = nil;
                              options:NSKeyValueObservingOptionNew
                              context:NULL];
     
-    self.report = [[LBRReport alloc]initWithEmail:@"webmaster@perseus.tufts.edu"];
-    [self.report setCcEmail:@"claudio@librum.it"];
+    // Probably also perseus webmaster is interested, but we're waiting for a confirm
+    //self.report = [[LBRReport alloc]initWithEmail:@"webmaster@perseus.tufts.edu"];
+    self.report = [[LBRReport alloc]initWithEmail:@"claudio@librum.it"];
+    //[self.report setCcEmail:@"claudio@librum.it"];
     [self.report setTextLabel:self.reportLabel];
     
     [[mySelf infotLabel] setStringValue:@""];
