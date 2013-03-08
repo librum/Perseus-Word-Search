@@ -52,6 +52,10 @@ x:CHI
 y:PSI
 w:OMEGA
 
+Report
+======
+You can help to improve the quality of Perseus database and of this application using the report link. Thank you!
+
 Snapshots
 =========
 File menu
