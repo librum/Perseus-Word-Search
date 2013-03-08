@@ -1,9 +1,12 @@
 Perseus-Word-Search
 ===================
 
-A graphical interface for Mac OS X to browse the greek word database of Perseus (http://www.perseus.tufts.edu/)
+A graphical interface for Mac OS X to browse the greek word database of Perseus Digital Library [[1]].
 
-The application is based on Librum objective-C library; all files of this library has the prefix 'LBR'.
+The application is developed by Librum [[2]]; it contains a library to manipulate greek characters and diacritics, using an extension
+of unicode that include more ancient greek glyphs.
+
+The application is currently localized for english and italian; it could be easily localized in more languages.
 
 
 Usage
@@ -13,7 +16,7 @@ When you start the application, you'll have an empty word list. To populate the 
 * open a XML file, with the Perseus syntax.
  It takes some times to parse the xml file.
  **Note:** you can find the whole file with all greek forms in Perseus Hopper:
-download the source [[1]] and navigate to sgml/xml/data, the file is greek.morph.xml;
+download the source [[3]] and navigate to sgml/xml/data, the file is greek.morph.xml;
 but actually it's too big to be parsed from the application. Maybe future version will resolve this limitation.
 
 * open an archive file that you've previously saved.
@@ -22,7 +25,7 @@ but actually it's too big to be parsed from the application. Maybe future versio
 You can find the file containing all greek verbs in this repository.
 
 After you've populate the list, you can filter it using the search field.
-You can use a latin keyboard, mapping between latin and greek characters is as follow (beta code convention [[2]]):
+You can use a latin keyboard, mapping between latin and greek characters is as follow (beta code convention [[4]]):
 
 a:ALPHA
 b:BETA
@@ -85,5 +88,7 @@ All the source code in this repository is developed by Librum.
 For more information: www.librum.it
 
 
-[1]: http://sourceforge.net/projects/perseus-hopper/
-[2]: http://en.wikipedia.org/wiki/Beta_code
+[1]: http://www.perseus.tufts.edu/
+[2]: http://www.librum.it
+[3]: http://sourceforge.net/projects/perseus-hopper/
+[4]: http://en.wikipedia.org/wiki/Beta_code
