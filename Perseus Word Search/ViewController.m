@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LBRGreekFormatter.h"
 
 #import "PerseusDataController.h"
 #import "LBRStringController.h"
@@ -102,7 +103,12 @@ ViewController* mySelf = nil;
                              context: NULL];
     
     self.mySearchString = [[LBRStringController alloc] init];
-    [self.searchView bind:@"searchText" toObject:self.mySearchString withKeyPath:@"string" options:nil];
+    //[self.searchView bind:@"searchText" toObject:self.mySearchString withKeyPath:@"string" options:nil];
+    NSString* findLemmaTxt = NSLocalizedStringFromTable(@"Find placeholder",@"InfoPlist",
+                                                        @"Placeholder for find field");
+    [[self.searchField cell] setPlaceholderString:findLemmaTxt];
+    [[self.searchField cell] setFormatter:[[LBRGreekFormatter alloc]init]];
+    
     [self.mySearchString addObserver:self
                           forKeyPath:@"string"
                              options:NSKeyValueObservingOptionNew
@@ -169,36 +175,49 @@ ViewController* mySelf = nil;
         
     }
     else if ([keyPath isEqualToString:@"string"]) {
-        
         NSString* key = self.mySearchString.string;
         NSLog(@"Search field changed: keyPath = %@, %@", keyPath, key);
-        PerseusDataController* rController = self.perseusController;
-        
-        // Select update mode
-        NSArray* origList = nil;
-        if ([self narrowFilteredList:key]) {
-            // new key has only a new character at the end
-            origList = [self.wordContentArray content];
-        } else {
-            // completely new key, search on all lemmas
-            origList = [rController getWordList];
-        }
-        
-        NSArray* filteredList = [LBRGreekFilter filterArray:(NSArray*)origList field:@"plainForm" forKey:key];
-        if (filteredList == nil) {
-            // search text is an empty string
-            // display all lemma on the list and an empty glossa
-            [self.wordContentArray setContent:[rController getWordList]];
-            [[[self.wordDescription textStorage] mutableString]setString:@""];
-            [self.report updateWithLemma:nil];
-        } else if ([filteredList count] > 0) {
-            [self.wordContentArray setContent:filteredList];
-        } else {
-            // nothing found
-            [self.wordContentArray setContent:nil];
-        }
+        [self updateFilterWithLemma:key];
         
     }
+}
+
+#pragma mark -
+#pragma mark Search
+- (void)updateFilterWithLemma:(NSString*)key {
+    PerseusDataController* rController = self.perseusController;
+    
+    // Select update mode
+    NSArray* origList = nil;
+    if ([self narrowFilteredList:key]) {
+        // new key has only a new character at the end
+        origList = [self.wordContentArray content];
+    } else {
+        // completely new key, search on all lemmas
+        origList = [rController getWordList];
+    }
+    
+    NSArray* filteredList = [LBRGreekFilter filterArray:(NSArray*)origList field:@"plainForm" forKey:key];
+    if (filteredList == nil) {
+        // search text is an empty string
+        // display all lemma on the list and an empty glossa
+        [self.wordContentArray setContent:[rController getWordList]];
+        [[[self.wordDescription textStorage] mutableString]setString:@""];
+        [self.report updateWithLemma:nil];
+    } else if ([filteredList count] > 0) {
+        [self.wordContentArray setContent:filteredList];
+    } else {
+        // nothing found
+        [self.wordContentArray setContent:nil];
+    }
+
+}
+
+- (IBAction)updateFilter:sender {
+    
+    NSString *searchString = [self.searchField stringValue];
+
+    [self updateFilterWithLemma:searchString];
 }
 
 #pragma -
@@ -226,7 +245,8 @@ ViewController* mySelf = nil;
     [mySelf.wordContentArray addObjects:arr];
     [mySelf.wordContentArray setSelectionIndex:0];
     
-    mySelf.searchView.textField = @"";
+    //mySelf.searchView.textField = @"";
+    // FIXME TODO Reset string
 }
 
 #pragma -

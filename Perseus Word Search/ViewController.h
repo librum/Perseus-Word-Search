@@ -14,7 +14,8 @@
 @property (weak) IBOutlet NSTableView		*wordTableView;
 @property (weak) IBOutlet NSArrayController	*wordContentArray;
 
-@property (weak) IBOutlet searchFieldView *searchView;
+//@property (weak) IBOutlet searchFieldView *searchView;
+@property (weak) IBOutlet NSSearchField *searchField;
 
 @property (unsafe_unretained) IBOutlet NSTextView *wordDescription;
 
@@ -27,5 +28,7 @@
 - (IBAction)doOpenArchive:(id)sender;
 
 - (IBAction)doSaveArchive:(id)sender;
+
+- (IBAction)updateFilter:sender;
 
 @end
